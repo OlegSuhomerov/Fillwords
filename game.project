@@ -1,0 +1,26 @@
+[bootstrap]
+main_collection = /main/levels/level.collectionc
+render = /main/rander/default.renderc
+
+[script]
+shared_state = 1
+
+[display]
+width = 1440
+height = 720
+high_dpi = 1
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = Fillwords
+dependencies = 
+custom_resources = main/levels/json
+
+[sprite]
+max_count = 256
+
+[label]
+max_count = 256
+

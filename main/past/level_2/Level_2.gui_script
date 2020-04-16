@@ -1,0 +1,71 @@
+require "main.words"
+local word1, word2, word3 = M.words_print_level1()
+
+edge = 50
+input_length = 0
+passing_level = 0
+number_tiles = 9
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	
+	level_2 = {
+		[1] = {
+			[1] = {order = 1, data = word1[1], word_length = 3},
+			[2] = {order = 2, data = word2[2], word_length = 3},
+			[3] = {order = 1, data = word2[1], word_length = 3},
+		},
+		[2] = {
+			[1] = {order = 2, data = word1[2], word_length = 3},
+			[2] = {order = 3, data = word2[3], word_length = 3},
+			[3] = {order = 1, data = word3[1], word_length = 3},
+		},
+		[3] = {
+			[1] = {order = 3, data = word1[3], word_length = 3},
+			[2] = {order = 3, data = word3[3], word_length = 3},
+			[3] = {order = 2, data = word3[2], word_length = 3},
+		},
+	}
+
+	for i in ipairs(level_2) do
+		for j in ipairs(level_2[i]) do
+			local node = gui.get_node('label_' .. i .. '_' .. j)
+			gui.set_text(node, level_2[i][j].data)
+			level_2[i][j].started = false
+			level_2[i][j].input_order = 0
+			level_2[i][j].finished = false
+		end
+	end
+
+	level_2_cord = {
+		[1] = {
+			[1] = {position_x = 120, position_y = 360},
+			[2] = {position_x = 240, position_y = 360},
+			[3] = {position_x = 360, position_y = 360},
+		},
+		[2] = {
+			[1] = {position_x = 120, position_y = 240},
+			[2] = {position_x = 240, position_y = 240},
+			[3] = {position_x = 360, position_y = 240},
+		},
+		[3] = {
+			[1] = {position_x = 120, position_y = 120},
+			[2] = {position_x = 240, position_y = 120},
+			[3] = {position_x = 360, position_y = 120},
+		},
+	}	
+end
+
+function on_input(self, action_id, action)
+	level = level_2
+	level_cord = level_2_cord
+	click_x = action.x
+	click_y = action.y
+	if action_id == hash("touch") and action.value == 1 then
+		M.typing_word()
+	elseif action_id == hash("touch") and action.released and action.value == 0 then
+		M.word_check(self)
+		input_length = 0
+		passing_level = 0
+	end
+end

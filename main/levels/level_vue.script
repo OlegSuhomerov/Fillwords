@@ -1,0 +1,45 @@
+require('main.levels.json_module')
+msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
+
+local blocksize = 120
+local edge = 60
+
+function init(self)
+	self.board = {}
+	msg.post(".", "acquire_input_focus")
+	msg.post("#", "start_level")
+end
+
+local function build_board(self)
+	local pos = vmath.vector3()
+	local x = 0
+	local y = 0
+	pprint(self.board.data)
+	for i in ipairs(self.board.data) do
+		pos.y = (edge + blocksize / 2 + blocksize * y)
+		x = 0
+		for j in ipairs(self.board.data[i]) do
+			pos.x = (edge + blocksize / 2 + blocksize * x) 
+			local id = factory.create('#blockfactory', pos, null)
+			pprint(self.board.data)
+			self.board.data[y + 1][x + 1].id = id
+			label.set_text(self.board.data[i][j].id, self.board.data[i][j].char)
+			x = x + 1
+		end
+		y = y + 1
+	end
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("touch") and action.value == 1 then
+		pprint(h)
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("start_level") then
+		self.current_level = 3
+		self.board = M.get_level_data(self)
+		build_board(self)
+	end
+end
