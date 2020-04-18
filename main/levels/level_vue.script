@@ -1,6 +1,6 @@
-require('main.levels.json_module')
-require('main.levels.inputmodule')
-require('main.levels.window_module')
+local json_module = require('main.levels.json_module')
+local input_module = require('main.levels.inputmodule')
+local window_module = require('main.levels.window_module')
 local hashmodule = require('main.levels.hashmodule')
 msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
 
@@ -12,6 +12,7 @@ function init(self)
 end
 
 local function build_board(self)
+	local rows = #self.board.data
 	local pos = vmath.vector3()
 	for i in ipairs(self.board.data) do
 		pos.y = self.bottom_margin + self.block_size * (i-1)
@@ -37,9 +38,9 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("start_level") then
-		self.current_level = 3
-		self.board = M.get_level_data(self)
-		W.window_change(self)
+		self.current_level = 1
+		self.board = json_module.M.get_level_data(self)
+
 		build_board(self)
 	end
 end

@@ -1,8 +1,8 @@
-W = {}
+local M = {}
 
 local default_blocksize = 128
 
-function W.window_change(self, rows)
+function window_change(self, rows)
 	
 	msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
 	
@@ -24,4 +24,4 @@ function W.window_change(self, rows)
 	
 end
 
-return W
+return M

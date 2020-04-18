@@ -1,0 +1,14 @@
+{
+	"dictionary": [
+			{
+				"library": "library_3",
+				"library_word": ["кот", "дом", "дым", "мох"]
+			},
+			{
+				"library": "library_5"
+			},
+			{
+				"library": "library_6"
+			}
+	]
+}

@@ -1,4 +1,4 @@
-M = {}
+local M = {}
 
 local function shuffle(tbl)
 	math.randomseed(tonumber(hash_to_hex(hash(tostring({}))):sub(4, 8), 16))

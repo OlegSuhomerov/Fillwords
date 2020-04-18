@@ -1,8 +1,8 @@
-I = {}
+local M = {}
 
 local input_order = {}
 
-function I.input(self, action_id, action)
+function input(self, action_id, action)
 	for i in ipairs(self.button_cord) do
 		for j in ipairs(self.button_cord[i]) do
 			if action.x < self.button_cord[i][j].pos_x + self.block_size / 2 and action.x > self.button_cord[i][j].pos_x - self.block_size / 2 and action.y > self.button_cord[i][j].pos_y - self.block_size / 2 and action.y < self.button_cord[i][j].pos_y + self.block_size / 2 and not self.board.data[i][j].pressed then
@@ -15,8 +15,8 @@ function I.input(self, action_id, action)
 	end
 end
 
-function I.check(self)
+function check(self)
 --	local start_word_num = node[input_order[1].i][input_order[1].j].word_num
 end	
 
-return I
+return M

@@ -1,9 +1,9 @@
-name: "proba"
+name: "levels"
 scale_along_z: 0
 embedded_instances {
-  id: "board"
+  id: "levels"
   data: "components {\n"
-  "  id: \"proba\"\n"
+  "  id: \"vue\"\n"
   "  component: \"/main/levels/level_vue.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
