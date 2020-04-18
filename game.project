@@ -6,8 +6,8 @@ render = /main/rander/default.renderc
 shared_state = 1
 
 [display]
-width = 1440
-height = 720
+width = 360
+height = 740
 high_dpi = 1
 
 [android]
@@ -17,6 +17,8 @@ input_method = HiddenInputField
 title = Fillwords
 dependencies = 
 custom_resources = main/levels/json
+bundle_resources = main/levels/json
+bundle_exclude_resources = 
 
 [sprite]
 max_count = 256

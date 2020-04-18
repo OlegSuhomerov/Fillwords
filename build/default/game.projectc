@@ -27,13 +27,13 @@ clear_color = 0
 display_profiles = /builtins/render/default.display_profilesc
 dynamic_orientation = 0
 fullscreen = 0
-height = 720
+height = 740
 high_dpi = 1
 samples = 0
 update_frequency = 0
 variable_dt = 0
 vsync = 1
-width = 1440
+width = 360
 
 [factory]
 max_count = 128
@@ -119,6 +119,7 @@ world_count = 4
 track_cpu = 0
 
 [project]
+bundle_resources = main/levels/json
 compress_archive = 1
 custom_resources = main/levels/json
 title = Fillwords

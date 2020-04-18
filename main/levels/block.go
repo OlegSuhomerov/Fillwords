@@ -7,8 +7,8 @@ embedded_components {
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
   position {
-    x: 0.0
-    y: 0.0
+    x: 64.0
+    y: 64.0
     z: -1.0
   }
   rotation {
@@ -61,8 +61,8 @@ embedded_components {
   "material: \"/builtins/fonts/label-df.material\"\n"
   ""
   position {
-    x: 0.0
-    y: 0.0
+    x: 64.0
+    y: 64.0
     z: 0.0
   }
   rotation {
