@@ -51,7 +51,7 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("start_level") then
 		self.current_level = 2
 		self.board = json_module.get_level_data(self)
-		window_module.window_change(self)
+		board_module.board = window_module.window_change(self)
 		build_board(self)
 	end
 end

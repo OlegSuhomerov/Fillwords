@@ -32,8 +32,10 @@ end
 function M.get_level_data(self)
 	local json_matrix = sys.load_resource("/main/levels/json/level_" .. self.current_level ..".json")
 	board_module.board = json.decode(json_matrix)
-	--local mat = random_json(matrix)
 	return board_module.board
+	--local matrix = json.decode(json_matrix)
+	--local mat = random_json(matrix)
+	--return matrix
 end
 
 return M
