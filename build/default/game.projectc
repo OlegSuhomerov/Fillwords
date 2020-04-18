@@ -11,7 +11,7 @@ version_code = 1
 
 [bootstrap]
 main_collection = /main/levels/level.collectionc
-render = /main/rander/default.renderc
+render = /main/render/default.renderc
 
 [collection]
 max_instances = 1024

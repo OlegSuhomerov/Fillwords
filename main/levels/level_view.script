@@ -1,0 +1,57 @@
+local json_module = require('main.levels.json_module')
+local input_module = require('main.levels.inputmodule')
+local window_module = require('main.levels.window_module')
+local hashmodule = require('main.levels.hashmodule')
+local board_module = require("main.levels.board_module")
+
+msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	msg.post("#", "start_level")
+end
+
+local function build_board(self)
+	local data = board_module.board.data
+	local button_cord = board_module.button_cord
+	local pos = vmath.vector3()
+	for i in ipairs(data) do
+		pos.y = window_module.bottom_margin + window_module.block_size * (i-1)
+		button_cord[i] = {}
+		for j in ipairs(data[i]) do
+			pos.x = window_module.left_margin + window_module.block_size * (j-1)
+			local id = factory.create('#blockfactory', pos, null, {}, window_module.block_scale)
+			data[i][j].id = id
+			label.set_text(data[i][j].id, data[window_module.rows - (i-1)][j].char)
+			button_cord[i][j] = {pos_x = pos.x + window_module.block_size / 2, pos_y = pos.y + window_module.block_size / 2}
+
+		end
+	end
+end
+
+local function on_fail(i,j)
+	print('fail')
+end
+
+local function on_success(word_num)
+	print(start_word_num)
+end
+
+local function on_move(i,j)
+	local data = board_module.board.data
+	msg.post(data[i][j].id, "play_animation", {id = hash("blue")})
+end
+
+function on_input(self, action_id, action)
+	
+	input_module.on_input(action,action_id, on_success, on_fail, on_move)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("start_level") then
+		self.current_level = 2
+		self.board = json_module.get_level_data(self)
+		window_module.window_change(self)
+		build_board(self)
+	end
+end

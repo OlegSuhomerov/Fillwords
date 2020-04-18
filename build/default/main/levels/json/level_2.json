@@ -1,75 +1,82 @@
 {
+	"words": [
+		"рысь",
+		"гипс",
+		"ежик",
+		"гиря"
+	],
+				
 	"data": [
 				[
 				{
 					"char": "р",
-					"order": "1"
+					"word": 1
 				},
 				{
 					"char": "ы",
-					"order": "2"
+					"word": 1
 				},
 				{
 					"char": "с",
-					"order": "3"
+					"word": 1
 				},
 				{
 					"char": "ь",
-					"order": "4"
+					"word": 1
 				}
 			],
 			[
 				{
 					"char": "г",
-					"order": "1"
+					"word": 2
 				},
 				{
 					"char": "и",
-					"order": "2"
+					"word": 2
 				},
 				{
 					"char": "п",
-					"order": "3"
+					"word": 2
 				},
 				{
 					"char": "с",
-					"order": "4"
+					"word": 2
 				}
 			],
 			[
 				{
 					"char": "е",
-					"order": "1"
+					"word": 3
 				},
 				{
 					"char": "ж",
-					"order": "2"
+					"word": 3
 				},
 				{
 					"char": "и",
-					"order": "3"
+					"word": 3
 				},
 				{
 					"char": "к",
-					"order": "4"
+					"word": 3
 				}
 			],
 			[
 				{
 					"char": "г",
-					"order": "1"
+					"word": 4
 				},
 				{
 					"char": "и",
-					"order": "2"
+					"word": 4
 				},
 				{
 					"char": "р",
-					"order": "3"
+					"word": 4
 				},
 				{
 					"char": "я",
-					"order": "4"
+					"word": 4
 				}
 		]
 	]

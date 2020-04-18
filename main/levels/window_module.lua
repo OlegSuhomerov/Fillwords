@@ -2,25 +2,26 @@ local M = {}
 
 local default_blocksize = 128
 
-function window_change(self, rows)
+function M.window_change(self)
 	
 	msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
 	
 	local screen_width, screen_heigth = 360, 720 -- window.get_size()
 	local board_size = screen_width
-	local rows, cols = #self.board.data, #self.board.data[1]
+	M.rows = #self.board.data
+	M.cols = #self.board.data[1]
 
-	if rows < cols then
-		self.block_scale = board_size / cols / default_blocksize
+	if M.rows < M.cols then
+		M.block_scale = board_size / M.cols / default_blocksize
 		
 	else 
-		self.block_scale = board_size / rows / default_blocksize
+		M.block_scale = board_size / M.rows / default_blocksize
 		
 	end
 
-	self.block_size = default_blocksize * self.block_scale
-	self.left_margin = (screen_width - cols * self.block_size) / 2
-	self.bottom_margin = (screen_heigth - rows * self.block_size) / 2
+	M.block_size = default_blocksize * M.block_scale
+	M.left_margin = (screen_width - M.cols * M.block_size) / 2
+	M.bottom_margin = (screen_heigth - M.rows * M.block_size) / 2
 	
 end
 

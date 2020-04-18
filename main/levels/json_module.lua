@@ -1,7 +1,9 @@
+local board_module = require("main.levels.board_module")
 local M = {}
 
+math.randomseed(tonumber(hash_to_hex(hash(tostring({}))):sub(4, 8), 16))
+
 local function shuffle(tbl)
-	math.randomseed(tonumber(hash_to_hex(hash(tostring({}))):sub(4, 8), 16))
 	for x = #tbl, 2, -1 do
 		local y = math.random(x)
 		tbl[x], tbl[y] = tbl[y], tbl[x]
@@ -29,9 +31,9 @@ end
 
 function M.get_level_data(self)
 	local json_matrix = sys.load_resource("/main/levels/json/level_" .. self.current_level ..".json")
-	local matrix = json.decode(json_matrix)
+	board_module.board = json.decode(json_matrix)
 	--local mat = random_json(matrix)
-	return matrix
+	return board_module.board
 end
 
 return M
