@@ -28,14 +28,11 @@ local function random_json(matrix)
 	--pprint(words.library[1].library_3[1])
 end
 
-
-function M.get_level_data(self)
+function M.get_level_data(self, matrix)
 	local json_matrix = sys.load_resource("/main/levels/json/level_" .. self.current_level ..".json")
-	board_module.board = json.decode(json_matrix)
-	return board_module.board
-	--local matrix = json.decode(json_matrix)
-	--local mat = random_json(matrix)
-	--return matrix
+	local matrix = json.decode(json_matrix)
+	return matrix
+
 end
 
 return M

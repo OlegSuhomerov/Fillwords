@@ -12,30 +12,37 @@ local function hit_node(x, y, i, j)
 	local bc = board_module.button_cord[i][j]
 	local bs = window_module.block_size
 	local board = board_module.board.data[i][j]
-	return not board.pressed and 
-	not board.guessed and
+	return not board.pressed and not board.guessed and
 	x < bc.pos_x + bs / 2 and 
 	x > bc.pos_x - bs / 2 and 
 	y > bc.pos_y - bs / 2 and 
 	y < bc.pos_y + bs / 2
 end
-		
 
-	
+
+
 local moving = false
 
 function M.on_input(action,action_id, on_success, on_fail, on_move)
 	local board = board_module.board.data
 	local words = board_module.board.words
+
 	if action_id == hashmodule.touch then
-		if action.pressed or moving then
+		if action.pressed or (moving and not action.released) then
 			moving = true
 			for i in ipairs(board) do
 				for j in ipairs(board[i]) do
-					if hit_node(action.x, action.y, i, j) and not board[j][j].pressed then
+					if hit_node(action.x, action.y, i, j) then
+						if #input_order > 0 then
+							local prev = input_order[#input_order]
+							if math.abs(i - prev.i) == 1 and math.abs(j - prev.j) == 1 then
+								board[prev.i][j].pressed = true
+								table.insert(input_order, {i = prev.i, j = j})
+								on_move(prev.i, j)
+							end
+						end
+
 						board[i][j].pressed = true
-						board[i][j].input_order = input_order
-						local prev = input_order[#input_order]
 						table.insert(input_order, {i = i, j = j})
 						on_move(i,j)
 					end
@@ -55,16 +62,16 @@ function M.on_input(action,action_id, on_success, on_fail, on_move)
 			local start_word_num = board[input_order[1].i][input_order[1].j].word_num
 			local result_word = ''
 			for _, order in ipairs(input_order) do
-				if board[order.i][order.j].word ~= start_word_num then
+				if board[order.i][order.j].word_num == start_word_num then
+					result_word = result_word .. board[order.i][order.j].char
+				else
+					result_word = ''
 					break
 				end
-				result_word = result_word .. board[order.i][order.j].char
 			end
 			if words[start_word_num] == result_word then
-				for i in ipairs(input_order) do 
-					for j in ipairs(input_order[i]) do 
-						board[i][j].guessed = true 
-					end
+				for _, order in ipairs(input_order) do 
+					board[order.i][order.j].guessed = true 
 				end
 				guessed = true
 			end

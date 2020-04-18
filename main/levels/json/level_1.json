@@ -1,36 +1,51 @@
 {
+  "words": [
+    "кот",
+    "дом",
+    "дым",
+  ],
+
   "data": [
-     [
-       {
-        "char": "a"
-      },
-       {
-        "char": "b"
-      },
-       {
-        "char": "c"
-      }
-    ],
-     [
-       {
-        "char": "d"
+    [
+      {
+        "char": "к",
+        "word_num": 1
       },
       {
-        "char": "e"
+        "char": "д",
+        "word_num": 2
       },
       {
-        "char": "f"
+        "char": "д",
+        "word_num": 3
       }
     ],
     [
       {
-        "char": "g"
+        "char": "о",
+        "word_num": 1
       },
       {
-        "char": "h"
+        "char": "о",
+        "word_num": 2
       },
       {
-        "char": "i"
+        "char": "ы",
+        "word_num": 3
+      }
+    ],
+    [
+      {
+        "char": "т",
+        "word_num": 1
+      },
+      {
+        "char": "м",
+        "word_num": 2
+      },
+      {
+        "char": "м",
+        "word_num": 3
       }
     ]
   ]
