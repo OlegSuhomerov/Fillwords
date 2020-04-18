@@ -71,6 +71,13 @@ function M.on_input(action,action_id, on_success, on_fail, on_move)
 		else
 			on_fail()
 		end
+		
+		for i in ipairs(board) do 
+			for j in ipairs(board[i]) do
+				board[i][j].pressed = false
+			end
+		end
+		
 	end
 end	
 
