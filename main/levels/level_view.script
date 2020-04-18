@@ -34,7 +34,7 @@ local function on_fail(i,j)
 end
 
 local function on_success(word_num)
-	print(start_word_num)
+	print('success')
 end
 
 local function on_move(i,j)

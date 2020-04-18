@@ -10,73 +10,73 @@
 				[
 				{
 					"char": "р",
-					"word": 1
+					"word_num": 1
 				},
 				{
 					"char": "ы",
-					"word": 1
+					"word_num": 1
 				},
 				{
 					"char": "с",
-					"word": 1
+					"word_num": 1
 				},
 				{
 					"char": "ь",
-					"word": 1
+					"word_num": 1
 				}
 			],
 			[
 				{
 					"char": "г",
-					"word": 2
+					"word_num": 2
 				},
 				{
 					"char": "и",
-					"word": 2
+					"word_num": 2
 				},
 				{
 					"char": "п",
-					"word": 2
+					"word_num": 2
 				},
 				{
 					"char": "с",
-					"word": 2
+					"word_num": 2
 				}
 			],
 			[
 				{
 					"char": "е",
-					"word": 3
+					"word_num": 3
 				},
 				{
 					"char": "ж",
-					"word": 3
+					"word_num": 3
 				},
 				{
 					"char": "и",
-					"word": 3
+					"word_num": 3
 				},
 				{
 					"char": "к",
-					"word": 3
+					"word_num": 3
 				}
 			],
 			[
 				{
 					"char": "г",
-					"word": 4
+					"word_num": 4
 				},
 				{
 					"char": "и",
-					"word": 4
+					"word_num": 4
 				},
 				{
 					"char": "р",
-					"word": 4
+					"word_num": 4
 				},
 				{
 					"char": "я",
-					"word": 4
+					"word_num": 4
 				}
 		]
 	]
