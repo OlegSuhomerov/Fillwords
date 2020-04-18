@@ -30,8 +30,8 @@ function M.on_input(action,action_id, on_success, on_fail, on_move)
 	if action_id == hashmodule.touch then
 		if action.pressed or moving then
 			moving = true
-			for i in ipairs(board_module.button_cord) do
-				for j in ipairs(board_module.button_cord[i]) do
+			for i in ipairs(board) do
+				for j in ipairs(board[i]) do
 					if hit_node(action.x, action.y, i, j) and not board[j][j].pressed then
 						board[i][j].pressed = true
 						board[i][j].input_order = input_order
@@ -52,7 +52,7 @@ function M.on_input(action,action_id, on_success, on_fail, on_move)
 			if #input_order == 0 then
 				return
 			end
-			local start_word_num = board[input_order[1].i][input_order[1].j].word
+			local start_word_num = board[input_order[1].i][input_order[1].j].word_num
 			local result_word = ''
 			for _, order in ipairs(input_order) do
 				if board[order.i][order.j].word ~= start_word_num then

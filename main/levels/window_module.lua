@@ -1,3 +1,4 @@
+local board_module = require("main.levels.board_module")
 local M = {}
 
 local default_blocksize = 128
@@ -8,8 +9,8 @@ function M.window_change(self)
 	
 	local screen_width, screen_heigth = 360, 720 -- window.get_size()
 	local board_size = screen_width
-	M.rows = #self.board.data
-	M.cols = #self.board.data[1]
+	M.rows = #board_module.board.data
+	M.cols = #board_module.board.data[1]
 
 	if M.rows < M.cols then
 		M.block_scale = board_size / M.cols / default_blocksize
