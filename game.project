@@ -1,0 +1,28 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+render = /main/render/default.renderc
+
+[script]
+shared_state = 1
+
+[display]
+width = 360
+height = 720
+high_dpi = 1
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = Fillwords
+dependencies = 
+custom_resources = main/levels/json
+bundle_resources = main/levels/json
+bundle_exclude_resources = 
+
+[sprite]
+max_count = 256
+
+[label]
+max_count = 256
+

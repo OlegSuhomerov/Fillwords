@@ -1,0 +1,225 @@
+{
+	"words": [
+		"изба",
+		"век",
+		"веревка",
+		"картина",
+		"бассейн",
+		"тревога",
+		"витрина",
+		"утро",
+		"рис"
+	],
+	"data": [
+		[
+			{
+				"char": "в",
+				"word_num": 7
+			},
+			{
+				"char": "и",
+				"word_num": 7
+			},
+			{
+				"char": "т",
+				"word_num": 7
+			},
+			{
+				"char": "р",
+				"word_num": 7
+			},
+			{
+				"char": "а",
+				"word_num": 7
+			},
+			{
+				"char": "р",
+				"word_num": 8
+			},
+			{
+				"char": "т",
+				"word_num": 8
+			}
+		],
+		[
+			{
+				"char": "а",
+				"word_num": 6
+			},
+			{
+				"char": "г",
+				"word_num": 6
+			},
+			{
+				"char": "о",
+				"word_num": 6
+			},
+			{
+				"char": "и",
+				"word_num": 7
+			},
+			{
+				"char": "н",
+				"word_num": 7
+			},
+			{
+				"char": "о",
+				"word_num": 8
+			},
+			{
+				"char": "у",
+				"word_num": 8
+			}
+		],
+		[
+			{
+				"char": "р",
+				"word_num": 6
+			},
+			{
+				"char": "е",
+				"word_num": 6
+			},
+			{
+				"char": "в",
+				"word_num": 6
+			},
+			{
+				"char": "с",
+				"word_num": 9
+			},
+			{
+				"char": "и",
+				"word_num": 9
+			},
+			{
+				"char": "р",
+				"word_num": 9
+			},
+			{
+				"char": "к",
+				"word_num": 2
+			}
+		],
+		[
+			{
+				"char": "т",
+				"word_num": 6
+			},
+			{
+				"char": "а",
+				"word_num": 4
+			},
+			{
+				"char": "н",
+				"word_num": 5
+			},
+			{
+				"char": "й",
+				"word_num": 5
+			},
+			{
+				"char": "е",
+				"word_num": 5
+			},
+			{
+				"char": "с",
+				"word_num": 5
+			},
+			{
+				"char": "е",
+				"word_num": 2
+			}
+		],
+		[
+			{
+				"char": "и",
+				"word_num": 4
+			},
+			{
+				"char": "н",
+				"word_num": 4
+			},
+			{
+				"char": "а",
+				"word_num": 3
+			},
+			{
+				"char": "б",
+				"word_num": 5
+			},
+			{
+				"char": "а",
+				"word_num": 5
+			},
+			{
+				"char": "с",
+				"word_num": 5
+			},
+			{
+				"char": "в",
+				"word_num": 2
+			}
+		],
+		[
+			{
+				"char": "т",
+				"word_num": 4
+			},
+			{
+				"char": "р",
+				"word_num": 4
+			},
+			{
+				"char": "к",
+				"word_num": 3
+			},
+			{
+				"char": "и",
+				"word_num": 1
+			},
+			{
+				"char": "з",
+				"word_num": 1
+			},
+			{
+				"char": "б",
+				"word_num": 1
+			},
+			{
+				"char": "а",
+				"word_num": 1
+			}
+		],
+		[
+			{
+				"char": "к",
+				"word_num": 4
+			},
+			{
+				"char": "а",
+				"word_num": 4
+			},
+			{
+				"char": "в",
+				"word_num": 3
+			},
+			{
+				"char": "е",
+				"word_num": 3
+			},
+			{
+				"char": "р",
+				"word_num": 3
+			},
+			{
+				"char": "е",
+				"word_num": 3
+			},
+			{
+				"char": "в",
+				"word_num": 3
+			}
+		]
+	]
+}

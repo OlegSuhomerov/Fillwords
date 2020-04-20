@@ -1,0 +1,136 @@
+{
+	"words": [
+		"ракушка",
+		"веранда",
+		"трезубец",
+		"торшер"
+	],
+	"data": [
+		[
+			{
+				"char": "р",
+				"word_num": 4
+			},
+			{
+				"char": "н",
+				"word_num": 2
+			},
+			{
+				"char": "д",
+				"word_num": 2
+			},
+			{
+				"char": "а",
+				"word_num": 2
+			}
+		],
+		[
+			{
+				"char": "е",
+				"word_num": 4
+			},
+			{
+				"char": "а",
+				"word_num": 2
+			},
+			{
+				"char": "е",
+				"word_num": 3
+			},
+			{
+				"char": "б",
+				"word_num": 3
+			}
+		],
+		[
+			{
+				"char": "ш",
+				"word_num": 4
+			},
+			{
+				"char": "р",
+				"word_num": 2
+			},
+			{
+				"char": "ц",
+				"word_num": 3
+			},
+			{
+				"char": "у",
+				"word_num": 3
+			}
+		],
+		[
+			{
+				"char": "р",
+				"word_num": 4
+			},
+			{
+				"char": "е",
+				"word_num": 2
+			},
+			{
+				"char": "в",
+				"word_num": 2
+			},
+			{
+				"char": "з",
+				"word_num": 3
+			}
+		],
+		[
+			{
+				"char": "о",
+				"word_num": 4
+			},
+			{
+				"char": "т",
+				"word_num": 4
+			},
+			{
+				"char": "р",
+				"word_num": 3
+			},
+			{
+				"char": "е",
+				"word_num": 3
+			}
+		],
+		[
+			{
+				"char": "а",
+				"word_num": 1
+			},
+			{
+				"char": "к",
+				"word_num": 1
+			},
+			{
+				"char": "т",
+				"word_num": 3
+			},
+			{
+				"char": "а",
+				"word_num": 1
+			}
+		],
+		[
+			{
+				"char": "р",
+				"word_num": 1
+			},
+			{
+				"char": "у",
+				"word_num": 1
+			},
+			{
+				"char": "ш",
+				"word_num": 1
+			},
+			{
+				"char": "к",
+				"word_num": 1
+			}
+		]
+	]
+}

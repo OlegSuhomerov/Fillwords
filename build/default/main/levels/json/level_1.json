@@ -1,0 +1,51 @@
+{
+  "words": [
+    "кот",
+    "дом",
+    "дым"
+  ],
+  "data": [
+    [
+      {
+        "char": "к",
+        "word_num": 1
+      },
+      {
+        "char": "д",
+        "word_num": 2
+      },
+      {
+        "char": "д",
+        "word_num": 3
+      }
+    ],
+    [
+      {
+        "char": "о",
+        "word_num": 1
+      },
+      {
+        "char": "о",
+        "word_num": 2
+      },
+      {
+        "char": "ы",
+        "word_num": 3
+      }
+    ],
+    [
+      {
+        "char": "т",
+        "word_num": 1
+      },
+      {
+        "char": "м",
+        "word_num": 2
+      },
+      {
+        "char": "м",
+        "word_num": 3
+      }
+    ]
+  ]
+}

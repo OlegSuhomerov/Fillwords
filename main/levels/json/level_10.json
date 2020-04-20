@@ -1,0 +1,287 @@
+{
+	"words": [
+		"мелодия",
+		"дракон",
+		"сердце",
+		"феромоны",
+		"криминал",
+		"растение",
+		"красота",
+		"навигатор",
+		"честь"
+	],
+	"data": [
+		[
+			{
+				"char": "с",
+				"word_num": 9
+			},
+			{
+				"char": "е",
+				"word_num": 9
+			},
+			{
+				"char": "ч",
+				"word_num": 9
+			},
+			{
+				"char": "ф",
+				"word_num": 4
+			},
+			{
+				"char": "е",
+				"word_num": 4
+			},
+			{
+				"char": "в",
+				"word_num": 8
+			},
+			{
+				"char": "а",
+				"word_num": 8
+			},
+			{
+				"char": "р",
+				"word_num": 8
+			}
+		],
+		[
+			{
+				"char": "т",
+				"word_num": 9
+			},
+			{
+				"char": "ь",
+				"word_num": 9
+			},
+			{
+				"char": "е",
+				"word_num": 3
+			},
+			{
+				"char": "с",
+				"word_num": 3
+			},
+			{
+				"char": "р",
+				"word_num": 4
+			},
+			{
+				"char": "и",
+				"word_num": 8
+			},
+			{
+				"char": "н",
+				"word_num": 8
+			},
+			{
+				"char": "о",
+				"word_num": 8
+			}
+		],
+		[
+			{
+				"char": "ц",
+				"word_num": 3
+			},
+			{
+				"char": "д",
+				"word_num": 3
+			},
+			{
+				"char": "р",
+				"word_num": 3
+			},
+			{
+				"char": "м",
+				"word_num": 4
+			},
+			{
+				"char": "о",
+				"word_num": 4
+			},
+			{
+				"char": "г",
+				"word_num": 8
+			},
+			{
+				"char": "а",
+				"word_num": 8
+			},
+			{
+				"char": "т",
+				"word_num": 8
+			}
+		],
+		[
+			{
+				"char": "е",
+				"word_num": 3
+			},
+			{
+				"char": "о",
+				"word_num": 2
+			},
+			{
+				"char": "н",
+				"word_num": 2
+			},
+			{
+				"char": "о",
+				"word_num": 4
+			},
+			{
+				"char": "н",
+				"word_num": 4
+			},
+			{
+				"char": "ы",
+				"word_num": 4
+			},
+			{
+				"char": "т",
+				"word_num": 7
+			},
+			{
+				"char": "а",
+				"word_num": 7
+			}
+		],
+		[
+			{
+				"char": "а",
+				"word_num": 2
+			},
+			{
+				"char": "к",
+				"word_num": 2
+			},
+			{
+				"char": "и",
+				"word_num": 1
+			},
+			{
+				"char": "я",
+				"word_num": 1
+			},
+			{
+				"char": "и",
+				"word_num": 6
+			},
+			{
+				"char": "е",
+				"word_num": 6
+			},
+			{
+				"char": "о",
+				"word_num": 7
+			},
+			{
+				"char": "с",
+				"word_num": 7
+			}
+		],
+		[
+			{
+				"char": "р",
+				"word_num": 2
+			},
+			{
+				"char": "о",
+				"word_num": 1
+			},
+			{
+				"char": "д",
+				"word_num": 1
+			},
+			{
+				"char": "к",
+				"word_num": 5
+			},
+			{
+				"char": "н",
+				"word_num": 6
+			},
+			{
+				"char": "е",
+				"word_num": 6
+			},
+			{
+				"char": "т",
+				"word_num": 6
+			},
+			{
+				"char": "а",
+				"word_num": 7
+			}
+		],
+		[
+			{
+				"char": "д",
+				"word_num": 2
+			},
+			{
+				"char": "л",
+				"word_num": 1
+			},
+			{
+				"char": "и",
+				"word_num": 5
+			},
+			{
+				"char": "р",
+				"word_num": 5
+			},
+			{
+				"char": "а",
+				"word_num": 5
+			},
+			{
+				"char": "л",
+				"word_num": 5
+			},
+			{
+				"char": "с",
+				"word_num": 6
+			},
+			{
+				"char": "р",
+				"word_num": 7
+			}
+		],
+		[
+			{
+				"char": "м",
+				"word_num": 1
+			},
+			{
+				"char": "е",
+				"word_num": 1
+			},
+			{
+				"char": "м",
+				"word_num": 5
+			},
+			{
+				"char": "и",
+				"word_num": 5
+			},
+			{
+				"char": "н",
+				"word_num": 5
+			},
+			{
+				"char": "р",
+				"word_num": 6
+			},
+			{
+				"char": "а",
+				"word_num": 6
+			},
+			{
+				"char": "к",
+				"word_num": 7
+			}
+		]
+	]
+}

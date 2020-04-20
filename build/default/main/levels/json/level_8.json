@@ -1,0 +1,195 @@
+{
+	"words": [
+		"пыль",
+		"мусор",
+		"магазин",
+		"плита",
+		"роза",
+		"лиса",
+		"ветер",
+		"троль",
+		"вор"
+	],
+	"data": [
+		[
+			{
+				"char": "п",
+				"word_num": 4
+			},
+			{
+				"char": "и",
+				"word_num": 3
+			},
+			{
+				"char": "з",
+				"word_num": 3
+			},
+			{
+				"char": "а",
+				"word_num": 3
+			},
+			{
+				"char": "г",
+				"word_num": 3
+			},
+			{
+				"char": "а",
+				"word_num": 3
+			},
+			{
+				"char": "м",
+				"word_num": 3
+			}
+		],
+		[
+			{
+				"char": "л",
+				"word_num": 4
+			},
+			{
+				"char": "н",
+				"word_num": 3
+			},
+			{
+				"char": "м",
+				"word_num": 2
+			},
+			{
+				"char": "у",
+				"word_num": 2
+			},
+			{
+				"char": "с",
+				"word_num": 2
+			},
+			{
+				"char": "л",
+				"word_num": 1
+			},
+			{
+				"char": "ь",
+				"word_num": 1
+			}
+		],
+		[
+			{
+				"char": "и",
+				"word_num": 4
+			},
+			{
+				"char": "т",
+				"word_num": 4
+			},
+			{
+				"char": "а",
+				"word_num": 4
+			},
+			{
+				"char": "в",
+				"word_num": 7
+			},
+			{
+				"char": "о",
+				"word_num": 2
+			},
+			{
+				"char": "ы",
+				"word_num": 1
+			},
+			{
+				"char": "р",
+				"word_num": 5
+			}
+		],
+		[
+			{
+				"char": "р",
+				"word_num": 9
+			},
+			{
+				"char": "е",
+				"word_num": 7
+			},
+			{
+				"char": "т",
+				"word_num": 7
+			},
+			{
+				"char": "е",
+				"word_num": 7
+			},
+			{
+				"char": "р",
+				"word_num": 2
+			},
+			{
+				"char": "п",
+				"word_num": 1
+			},
+			{
+				"char": "о",
+				"word_num": 5
+			}
+		],
+		[
+			{
+				"char": "о",
+				"word_num": 9
+			},
+			{
+				"char": "р",
+				"word_num": 7
+			},
+			{
+				"char": "о",
+				"word_num": 8
+			},
+			{
+				"char": "р",
+				"word_num": 8
+			},
+			{
+				"char": "т",
+				"word_num": 8
+			},
+			{
+				"char": "а",
+				"word_num": 5
+			},
+			{
+				"char": "з",
+				"word_num": 5
+			}
+		],
+		[
+			{
+				"char": "в",
+				"word_num": 9
+			},
+			{
+				"char": "ь",
+				"word_num": 8
+			},
+			{
+				"char": "л",
+				"word_num": 8
+			},
+			{
+				"char": "а",
+				"word_num": 6
+			},
+			{
+				"char": "с",
+				"word_num": 6
+			},
+			{
+				"char": "и",
+				"word_num": 6
+			},
+			{
+				"char": "л",
+				"word_num": 6
+			}
+		]
+	]
+}

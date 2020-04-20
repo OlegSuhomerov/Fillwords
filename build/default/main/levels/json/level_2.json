@@ -1,0 +1,83 @@
+{
+	"words": [
+		"рысь",
+		"гипс",
+		"ящик",
+		"гиря"
+	],
+				
+	"data": [
+				[
+				{
+					"char": "г",
+					"word_num": 2
+				},
+				{
+					"char": "ь",
+					"word_num": 1
+				},
+				{
+					"char": "с",
+					"word_num": 1
+				},
+				{
+					"char": "ы",
+					"word_num": 1
+				}
+			],
+			[
+				{
+					"char": "и",
+					"word_num": 2
+				},
+				{
+					"char": "п",
+					"word_num": 2
+				},
+				{
+					"char": "я",
+					"word_num": 3
+				},
+				{
+					"char": "р",
+					"word_num": 1
+				}
+			],
+			[
+				{
+					"char": "г",
+					"word_num": 4
+				},
+				{
+					"char": "с",
+					"word_num": 2
+				},
+				{
+					"char": "щ",
+					"word_num": 3
+				},
+				{
+					"char": "и",
+					"word_num": 3
+				}
+			],
+			[
+				{
+					"char": "и",
+					"word_num": 4
+				},
+				{
+					"char": "р",
+					"word_num": 4
+				},
+				{
+					"char": "я",
+					"word_num": 4
+				},
+				{
+					"char": "к",
+					"word_num": 3
+				}
+		]
+	]
+}

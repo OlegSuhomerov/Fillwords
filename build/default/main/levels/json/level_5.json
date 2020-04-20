@@ -1,0 +1,142 @@
+{
+	"words": [
+		"единорог",
+		"фея",
+		"демон",
+		"флейта",
+		"эльф",
+		"лорд"
+	],
+	"data": [
+		[
+			{
+				"char": "л",
+				"word_num": 4
+			},
+			{
+				"char": "ф",
+				"word_num": 4
+			},
+			{
+				"char": "н",
+				"word_num": 1
+			},
+			{
+				"char": "и",
+				"word_num": 1
+			},
+			{
+				"char": "р",
+				"word_num": 6
+			},
+			{
+				"char": "о",
+				"word_num": 6
+			}
+		],
+		[
+			{
+				"char": "е",
+				"word_num": 4
+			},
+			{
+				"char": "н",
+				"word_num": 3
+			},
+			{
+				"char": "о",
+				"word_num": 1
+			},
+			{
+				"char": "д",
+				"word_num": 1
+			},
+			{
+				"char": "д",
+				"word_num": 6
+			},
+			{
+				"char": "л",
+				"word_num": 6
+			}
+		],
+		[
+			{
+				"char": "й",
+				"word_num": 4
+			},
+			{
+				"char": "о",
+				"word_num": 3
+			},
+			{
+				"char": "р",
+				"word_num": 1
+			},
+			{
+				"char": "е",
+				"word_num": 1
+			},
+			{
+				"char": "ь",
+				"word_num": 5
+			},
+			{
+				"char": "ф",
+				"word_num": 5
+			}
+		],
+		[
+			{
+				"char": "т",
+				"word_num": 4
+			},
+			{
+				"char": "м",
+				"word_num": 3
+			},
+			{
+				"char": "о",
+				"word_num": 1
+			},
+			{
+				"char": "г",
+				"word_num": 1
+			},
+			{
+				"char": "л",
+				"word_num": 5
+			},
+			{
+				"char": "э",
+				"word_num": 5
+			}
+		],
+		[
+			{
+				"char": "а",
+				"word_num": 4
+			},
+			{
+				"char": "е",
+				"word_num": 3
+			},
+			{
+				"char": "д",
+				"word_num": 3
+			},
+			{
+				"char": "ф",
+				"word_num": 2
+			},
+			{
+				"char": "е",
+				"word_num": 2
+			},
+			{
+				"char": "я",
+				"word_num": 2
+			}
+		]
+	]
+}
