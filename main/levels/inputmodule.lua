@@ -1,6 +1,6 @@
 local board_module = require("main.levels.board_module")
 local window_module = require("main.levels.window_module")
-local hashmodule = require("main.levels.hashmodule")
+local hash_module = require("main.levels.hash_module")
 
 
 local M = {}
@@ -28,7 +28,7 @@ function M.on_input(action,action_id, on_success, on_fail, on_move)
 	local board = board_module.board.data
 	local words = board_module.board.words
 
-	if action_id == hashmodule.touch then
+	if action_id == hash_module.touch then
 		if action.pressed or (moving and not action.released) then
 			moving = true
 			for i in ipairs(board) do

@@ -1,3 +1,4 @@
+local render_data = require("main.levels.render_data")
 --
 -- projection that centers content with maintained aspect ratio and optional zoom
 --
@@ -52,6 +53,9 @@ function init(self)
     self.near = -1
     self.far = 1
     self.projection_fn = stretch_projection
+
+    render_data.width = render.get_width()
+    render_data.height = render.get_height()
 end
 
 function update(self)

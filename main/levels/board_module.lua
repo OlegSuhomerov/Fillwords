@@ -7,6 +7,5 @@ M.board = {}
 M.button_cord = {}
 M.current_level = 0
 M.load = false
-M.input_text = ''
 M.active = false
 return M

@@ -1,32 +1,32 @@
 local board_module = require("main.levels.board_module")
-local hashmodule = require('main.levels.hashmodule')
+local hash_module = require('main.levels.hash_module')
 
 function init(self)
-	msg.post(".", "acquire_input_focus")
+	msg.post(".", hash_module.acquire_input_focus)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == hashmodule.load_level then
+	if message_id == hash_module.load_level then
 		board_module.current_level = message.level
 		local proxy = "#proxy_levels"
-		msg.post(proxy, "load")
+		msg.post(proxy, hash_module.load)
 		board_module.loader = true
-	elseif message_id == hashmodule.next_level then
-		msg.post("#", "unload_level")
+	elseif message_id == hash_module.next_level then
+		msg.post("#", hash_module.unload_level)
 		board_module.loader = false 
-	elseif message_id == hashmodule.proxy_unloaded and board_module.loader == false then
+	elseif message_id == hash_module.proxy_unloaded and board_module.loader == false then
 		if board_module.current_level ~= board_module.number_levels then
-			msg.post("#", "load_level", { level = board_module.current_level + 1 })
+			msg.post("#", hash_module.load_level, { level = board_module.current_level + 1 })
 		else
-			msg.post("#", "load_level", { level = 1})
+			msg.post("#", hash_module.load_level, { level = 1})
 		end
-	elseif message_id == hashmodule.unload_level then
+	elseif message_id == hash_module.unload_level then
 		local proxy = "#proxy_levels"
-		msg.post(proxy, "disable")
-		msg.post(proxy, "final")
-		msg.post(proxy, "unload")
-	elseif message_id == hashmodule.proxy_loaded then
-		msg.post(sender, "init")
-		msg.post(sender, "enable")
+		msg.post(proxy, hash_module.disable)
+		msg.post(proxy, hash_module.final)
+		msg.post(proxy, hash_module.unload)
+	elseif message_id == hash_module.proxy_loaded then
+		msg.post(sender, hash_module.init)
+		msg.post(sender, hash_module.enable)
 	end
 end

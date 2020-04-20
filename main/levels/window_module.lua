@@ -1,12 +1,13 @@
 local board_module = require("main.levels.board_module")
+local render_data = require("main.levels.render_data")
 
 local M = {}
 
-function M.window_change(self)
+function M.build_board_config(self)
 	
-	msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
-	
-	local screen_width, screen_heigth = 360, 720
+	local screen_width = render_data.width
+	local screen_height = render_data.height
+
 	local board_size = screen_width
 	M.rows = #board_module.board.data
 	M.cols = #board_module.board.data[1]
@@ -21,7 +22,7 @@ function M.window_change(self)
 
 	M.block_size = board_module.default_blocksize * M.block_scale
 	M.left_margin = (screen_width - M.cols * M.block_size) / 2
-	M.bottom_margin = (screen_heigth - M.rows * M.block_size) / 2
+	M.bottom_margin = (screen_height - M.rows * M.block_size) / 2
 	
 end
 
